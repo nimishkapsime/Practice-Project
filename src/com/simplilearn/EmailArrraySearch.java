@@ -3,16 +3,17 @@ package com.simplilearn;
 import java.util.Scanner;
 
 public class EmailArrraySearch {
-
+	
 	public static void main(String[] args) {
 		String email [] = {"abc@gmail.com","def@gmail.com","ghi@gmail.com"};
 		String esearch;
+		boolean flag =false;
 
 		Scanner sc= new Scanner(System.in);
 		System.out.println("enter email to search");
 		esearch=sc.next();
-		boolean flag =false;
-		for (int i =0; i <= email.length;i++)
+		
+		for (int i =0; i < email.length;i++)
 		{
 			String avalue = email[i];
 
@@ -23,8 +24,7 @@ public class EmailArrraySearch {
 			}
 
 		}
-		if(flag = true)
-
+		if(flag)
 		{
 			System.out.println("Email id found in Array: "+esearch);
 		}
